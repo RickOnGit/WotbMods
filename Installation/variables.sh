@@ -1,8 +1,6 @@
-B1="$HOME/FullDataFolderBackup"
+B="$HOME/WotbBackup"
 
-B2="$HOME/OgSounds"
-
-F1="$HOME/.local/share/Steam/steamapps/common/'World of Tanks Blitz'/Data"
+F1="$HOME/.local/share/Steam/steamapps/common/'World of Tanks Blitz'/Data/3d/Tanks"
 
 F2="$HOME/.local/share/Steam/steamapps/common/'World of Tanks Blitz'/Data/WwiseSound"
 
