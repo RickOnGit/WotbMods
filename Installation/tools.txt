@@ -1,0 +1,8 @@
+https://tnmshouse.com/tankexporter/ -> to get tank exporter
+
+sudo dnf install blender -> for editing
+
+download fbxsdk for linux and read the readme into the extracted tar file for the installation.
+
+
+ 
