@@ -4,9 +4,9 @@ source ./functions.sh
 while true 
 do
     echo -e ""$CYAN"(?) "$YELLOW"Chose what to do :"$NC"\n"
-    echo -e "(A) Merge all files\t (B) Merge all files but not the 3d/tank folder\t (C) Chose which remodel to load\t (Q) Quit the program\n"
+    echo -e "(A) Merge all files\t (B) Merge all files but not the 3d/tank folder\t (C) Chose which remodel to load\t (Q) Quit the program"
 
-    echo -e -n ""$CYAN"(?) "$YELLOW"Chose an option [A-D]: "$NC""
+    echo -e -n "\n"$CYAN"(?) "$YELLOW"Chose an option [A-Q]: "$NC""
     read ans
 
     if [[ "$ans" == "A" || "$ans" == "a" ]]; then
