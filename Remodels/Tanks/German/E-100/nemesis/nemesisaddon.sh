@@ -5,7 +5,10 @@ curl -o "NemesisAddon.zip" "https://s615vla.storage.yandex.net/rdisk/4d86f106eb2
 unzip NemesisAddon.zip > /dev/null 2>&1
 mkdir -p maskeff
 cp 3d/Tanks/German/*.sc2.dvpl maskeff && cp 3d/Tanks/German/*.scg.dvpl maskeff
-rsync -a 3d "$WgDataFlat"
+if [ -d "$WgDataflat" ]; then
+    rsync -a 3d "$WgDataFlat"
+elif rsync -a 3d "$WgDataRpm"
+fi
 rm NemesisAddon.zip && rm -rf 3d
 
 echo -e "\nDONE!\n"

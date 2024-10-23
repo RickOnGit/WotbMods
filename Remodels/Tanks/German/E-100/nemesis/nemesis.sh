@@ -5,7 +5,10 @@ curl -o "Nemesis1.zip" "https://s963sas.storage.yandex.net/rdisk/7b53d86f8bb7b94
 unzip Nemesis1.zip > /dev/null 2>&1
 mkdir -p mask
 cp 3d/Tanks/German/*.sc2.dvpl mask && cp 3d/Tanks/German/*.scg.dvpl mask
-rsync -a 3d "$WgDataFlat"
+if [ -d "$WgDataflat" ]; then
+    rsync -a 3d "$WgDataFlat"
+elif rsync -a 3d "$WgDataRpm"
+fi
 rm Nemesis1.zip && rm -rf 3d
 
 echo -e "\nDONE!\n"
