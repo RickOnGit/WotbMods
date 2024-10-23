@@ -1,5 +1,6 @@
 source general/./colors.sh
 source general/./logo.sh
+source ../Remodels/
 #source ./functions.sh
 
 while true 
