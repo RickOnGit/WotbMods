@@ -17,6 +17,8 @@ Wassup tankers, if you are into(or not) mods and you have ever wondered: "🤔 I
 
 - Next steps:
  - get the script working on Windows
- - implement a different user interface than the terminal. 
+ - implement a more modern graphical interface
+
+- So if you enjoy the script pls consider to donate anything you want for paying my time spent in the development 🥰
 
 
