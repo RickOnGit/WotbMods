@@ -1,4 +1,4 @@
-source $HOME/Documents/WotbMods/Remodels/./variables.sh
+source $HOME/RickWotbMods/Remodels/./variables.sh
 #impostare source su home e non su socuments
 wget https://forblitz.ru/wp-content/uploads/2022/08/update_e100_deusex_sadabsolution_steam.zip
 unzip update_e100_deusex_sadabsolution_steam.zip > /dev/null 2>&1
