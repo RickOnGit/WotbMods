@@ -2,11 +2,11 @@ source $HOME/RickWotbMods/general/./variables.sh
 source $HOME/RickWotbMods/general/./colors.sh
 
 check() {
-    local dir="$1"
-    local models=($(ls -d */ | sed 's#/##'))
+    local var="$1"
+    local arr=($(ls -d */ | sed 's#/##'))
 
-    for tank in "${models[@]}"; do
-        if [[ "$tank" == "$dir" ]]; then
+    for i in "${arr[@]}"; do
+        if [[ "$i" == "$var" ]]; then
             return 0 
         fi
     done
