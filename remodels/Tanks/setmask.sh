@@ -26,13 +26,11 @@ loadmask() {
     cd $Nations
 }
 
-choseremodel() {        
+choseremodel() {
     local tank="$1"
-    enter() {
-    cd $tank
-    }
-    enter
-    apply() {
+    cd "$tank" || return  # Verifica se il cambio di directory è riuscito
+
+    while true; do
         echo -e "\n$BOLD$CYAN(?)$YELLOW Avaiable remodels: "$NC"\n"
         tree -d -L 1 -I "mask*" --noreport
         echo -e -n "\n$BOLD$CYAN(?)$YELLOW Chose one: "$NC""; read ans3
@@ -41,13 +39,17 @@ choseremodel() {
             echo -e "\nWe're done here...\n"
             break
         fi
-        if check $ans3; then
+
+        if check "$ans3"; then
             loadmask "$ans3"
-        else clear; echo -e "\n Tf u typed bro... retry\n"
-            apply
-    fi
-    }
-    apply
+            break  # Esci dal ciclo se l'operazione è riuscita
+        else
+            clear
+            echo -e "\n Tf u typed bro... retry\n"
+        fi
+    done
+
+    cd ..  # Torna indietro alla directory principale dei carri dopo l'applicazione
 }
 
 selecnation () { 
